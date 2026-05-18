@@ -1,0 +1,14 @@
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; }
+
+.hero-gradient { background: linear-gradient(145deg, #f0f9ff 0%, #ffffff 60%); }
+.cta-gradient { background: linear-gradient(45deg, #0284c7, #0ea5e9, #38bdf8); }
+.card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+
+/* Animation Classes */
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* Fade In for results */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+.animate-fade-in { animation: fadeIn 0.5s ease-out forwards; }
